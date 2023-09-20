@@ -1,0 +1,731 @@
+/* Medium Layout: 1280px. 
+
+Checking Size: 1000px
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 970px;
+    }
+    .menu ul li {
+        padding: 0 5px 10px;
+    }
+    .banner, .banner-sec {
+        margin-left: 15px;
+    }
+    .section-about {
+        flex-direction: row;
+    }
+    .about-left {
+        flex-basis: 426px;
+    }
+    .about-middle {
+        flex-basis: 500px;
+        margin-right: 6px;
+    }
+    .about-right {
+        flex-basis: 100%;
+    }
+    .section-info {
+        width: 100%;
+        margin: 0;
+    }
+    .section-info p {
+        max-width: 500px;
+        margin-left: 230px;
+    }
+    .services {
+        margin: 50px 0;
+    }
+    .single-service {
+        flex-basis: 313px;
+        margin: 18px 0 0;
+    }
+    .appoinment-img {
+        flex-basis: 435px;
+    }
+    .img-info {
+        padding: 39px 4px;
+        margin-top: -170px;
+        margin-left: 41px;
+    }
+    .img-info span {
+        font-size: 42px;
+    }
+    .appoinment-content {
+        flex-basis: 465px;
+    }
+    .booked textarea {
+        height: 11vh;
+    }
+    .single-testi {
+        flex-basis: 470px;
+        margin-top: 60px;
+    }
+    .single-testi fieldset p {
+        padding-bottom: 29px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .partners {
+        margin: 40px 0 0;
+    }
+    .single-footer:nth-child(2) {
+        margin-left: 0; 
+        flex-basis: 157px;
+    }
+    .single-footer:nth-child(3) {
+        flex-basis: 159px;
+    }
+
+    /* About Area */
+    .about-banner {
+        margin-left: 377px;
+    }
+    .title {
+        flex-basis: 580px;
+    }
+    .single-feat {
+        flex-basis: 469px;
+        margin: 9px 0;
+    }
+    .achieve-img {
+        flex-basis: 600px;
+    }
+    .single-achieve {
+        flex-basis: 187px;
+    }
+    .test-img {
+        flex-basis: 434px;
+    }
+    .testi-info {
+        flex-basis: 478px;
+        margin-top: 27px;
+    }
+    .section-info h3::before {
+        width: 82px;
+    }
+    .about-testi-area .section-info h3::before {
+        left: 9%;
+    }
+    .single-specialist {
+        flex-basis: 465px;
+    }
+    .testi-info h4 {
+        padding-top: 42px;
+    }
+    .testi-info p {
+        padding-bottom: 28px;
+    }
+    .banner-section {
+        padding-top: 418px;
+        background-position: -60px 0;
+    }
+
+    /* Services Area */
+    .services-banner-area .about-banner {
+        margin-left: 346px;
+    }
+    .single-serv {
+        flex-basis: 310px;
+        margin: 37px 0;
+    }
+    .single-serv p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .banner-sec-info {
+        margin-top: 50px;
+    }
+
+    /* Department */
+    .depart-banner-area .about-banner {
+        margin-left: 265px;
+    }
+
+    /* Single Department */
+    .service-time {
+        width: 100%;
+    }
+    .single-time {
+        flex-basis: 600px;
+    }
+
+    /* Doctors */
+    .doctor-banner-area .about-banner {
+        margin-left: 260px;
+    }
+
+    /* Single Doctor */
+    .profile {
+        margin: 50px 0 0 3px;
+    }
+    .single-profile {
+        flex-basis: 343px;
+    }
+    .single-times {
+        flex-basis: 600px;
+    }
+
+    /* Appoinment */
+    .single-doc-banner-area .about-banner {
+        margin-left: 325px;
+    }
+    .appoin-img {
+        flex-basis: 380px;
+    }
+
+    /* Blog Area */
+    .blog-banner-area .about-banner {
+        margin-left: 337px;
+    }
+    .blog-box {
+        flex-basis: 577px;
+    }
+
+    /* Contact Area */
+    .single-contact {
+        flex-basis: 306px;
+        padding: 43px 0;
+    }
+}
+
+
+/* Tablet Layout: 768px. 
+
+Checking Size: 800px
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .logo a img {
+        padding-bottom: 10px;
+    }
+    .menu ul li {
+        padding: 0 0 10px;
+        position: relative;
+    }
+    .menu ul li a {
+        padding: 0 24px;
+    }
+    .about-middle {
+        flex-basis: 378px;
+        margin-right: 0;
+    } 
+    .about-right {
+        flex-basis: 100%;
+    }
+    .section-info {
+        width: 100%;
+        margin: 0; 
+    }  
+    .services {
+        margin: 50px 0;
+    } 
+    .single-service {
+        flex-basis: 365px;
+    }
+    .appoinment-img {
+        flex-basis: 100%;
+    }
+    .img-info {
+        width: 550px;
+        padding: 54px 10px;
+        margin-left: 218px;
+        padding-left: 50px;
+    }
+    .appoinment-content {
+        flex-basis: 100%;
+        margin-top: 35px;
+    }
+    .booked textarea {
+        height: 11vh;
+    }
+    .single-testi {
+        flex-basis: 100%;
+    }
+    .single-footer:first-child {
+        flex-basis: 185px;
+    }
+    .single-footer:nth-child(2) {
+        margin-left: 0; 
+        flex-basis: 143px;
+    }
+    .single-footer:nth-child(3) {
+        flex-basis: 150px;
+    }
+    .single-footer {
+        flex-basis: 223px;
+    }
+
+    /* About Area */
+    .about-banner {
+        margin-left: 260px;
+    }
+    .about-page {
+        flex-direction: column;
+    }
+    .section-about-page .section-info {
+        flex-basis: 100%;
+    }
+    .title {
+        flex-basis: 100%;
+    }
+    .single-feat {
+        flex-basis: 363px;
+        margin: 20px 0;
+    }
+    .achieve-area .section-info {
+        flex-basis: 344px;
+        margin: 0 0 30px;
+    }
+    .single-specialist {
+        flex-basis: 360px;
+    }
+    .test-img {
+        flex-basis: 100%;
+    }
+    .testi-info {
+        flex-basis: 100%;
+        margin-left: 23px;
+        margin-top: 26px;
+        margin-bottom: 33px;
+    }
+
+    /* Services Area */
+    .services-banner-area .about-banner {
+        margin-left: 250px;
+    }
+    .banner-section {
+        padding-top: 347px;
+        background-position: inherit;
+    }
+    .banner-sec {
+        margin-top: -298px;
+        margin-left: 0;
+    }
+    .banner-sec-info p {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    /* Department Area */
+    .depart-banner-area .about-banner {
+        margin-left: 165px;
+    }
+
+    /* Single Department */
+    .service-time {
+        width: 100%;
+    }
+    .service-info, .profile {
+        flex-direction: column;
+    }
+    .single-time {
+        flex-basis: 100%;
+        margin-bottom: 42px;
+    }
+    .time-schedule {
+        flex-basis: 100%;
+    }
+
+    /* Doctor Area */
+    .doctor-banner-area .about-banner {
+        margin-left: 135px;
+    }
+
+    /* Single Doctor */
+    .profile {
+        margin: 25px 0 0 0;
+    }
+    .single-profile {
+        flex-basis: 100%;
+    }
+    .img {
+        width: 100%;
+    }
+    .single-times {
+        flex-basis: 100%;
+        margin-top: 500px;
+    }
+
+    /* Appoinment */
+    .single-doc-banner-area .about-banner {
+        margin-left: 230px;
+    }
+    .appoin {
+        flex-direction: column;
+    }
+    .appoin-img {
+        flex-basis: 100%;
+        margin-bottom: 63px;
+    }
+
+    /* Blogs Area */
+    .blog-banner-area .about-banner {
+        margin-left: 230px;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .blog-box {
+        flex-basis: 100%;
+    }
+    .blog-search {
+        flex-basis: 100%;
+    }
+    .popular h4 {
+        margin: 40px 0 15px;
+    }
+    .tags-link {
+        margin: 0 400px 0 0;
+    }
+
+    /* Contact Area */
+    .contact-info {
+        flex-direction: column;
+    }
+    .single-contact {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-area .btn-bg {
+        width: 28%;
+    }
+
+}
+
+
+/* Mobile Layout: 350px
+
+Checking Size: 400px
+*/
+@media only screen and (max-width: 767px){
+    .container{
+        width: 350px;
+    }
+    .top-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+    .top-left a{
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        padding-bottom: 3px;
+    }
+    .top-left a i {
+        width: 26px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .top-right{
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li ul {
+        margin-left: 95px;
+        margin-top: -4px;
+    }
+
+    /* Banner Area */
+    .banner-area {
+        padding-top: 354px;
+        background-position: -179px 0;
+    }
+    .banner, .banner-sec {
+        margin-left: -14px;
+        margin-top: -303px;
+        max-width: 100%;
+    }
+    .banner-info span, .banner-sec-info p {
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .banner-info h1 {
+        font-size: 41px;
+        padding-bottom: 25px;
+    }
+    .banner-info p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .btn-bg {
+        font-size: 11px;
+        padding: 11px 14px;
+        margin-top: 20px;
+    }
+
+    /* Features Area */
+    .features {
+        flex-direction: column;
+    }
+    .single-feature {
+        flex-basis: 32%;
+        margin: 54px 0 0;
+    }
+
+    /* About Area */
+    .about-left {
+        flex-basis: 100%;
+    }
+    .about-middle {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .about-right {
+        flex-basis: 100%;
+    }
+
+    /* Services Area */
+    .section-info {
+        width: 100%;
+        margin: 0;
+    }
+    .services {
+        margin: 50px 0 0 0;
+    }
+    .single-service {
+        flex-basis: 100%;
+    }
+    .img-info {
+        width: 100%;
+        padding: 47px 0;
+        background-color: #223a66;
+        position: absolute;
+        content: "";
+        margin-top: -184px;
+        margin-left: 0; 
+        border-radius: 4px;
+        padding-left: 19px;
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .img-info span {
+        font-size: 39px;
+        padding-left: 11px;
+    }
+    .appoinment-content {
+        flex-basis: 100%;
+    }
+    .booked textarea{
+        height: 10vh;
+    }
+    .single-testi {
+        flex-basis: 100%;
+    }
+    .single-partner {
+        flex-basis: 100%;
+    }
+
+    /* Footer Area */
+    .footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid #6F8BA4;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+    .single-footer:first-child {
+        flex-basis: 100%;
+        margin-bottom: 55px;
+    }
+    .single-footer:nth-child(2) {
+        margin-left: 0;
+        flex-basis: 100%;
+        margin-bottom: 55px;
+    }
+    .single-footer:nth-child(3) {
+        flex-basis: 100%;
+        margin-bottom: 55px;
+    }
+    .single-footer {
+        flex-basis: 100%;
+        margin-bottom: 55px;
+    }
+
+    .about-banner-area, .services-banner-area, .depart-banner-area, .doctor-banner-area, .single-doc-banner-area, .blog-banner-area {
+        padding-top: 231px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .about-banner {
+        margin-top: -172px;
+        margin-left: 84px;
+    }
+    .about-banner span {
+        padding-left: 51px;
+    }
+    .section-about-page .section-info {
+        flex-basis: 100%;
+    }
+    .title {
+        flex-basis: 100%;
+    }
+    .title img {
+        width: 50%;
+    }
+    .about-feature {
+        flex-direction: column;
+    }
+    .single-feat {
+        flex-basis: 100%;
+        margin-bottom: 35px;
+    }
+    .achieve-area .section-info {
+        flex-basis: 100%;
+    }
+    .achieve-img {
+        flex-basis: 100%;
+        margin-top: 37px;
+    }
+    .single-achieve {
+        flex-basis: 100%;
+    }
+    .single-specialist {
+        flex-basis: 100%;
+    }
+    .test-img {
+        flex-basis: 100%;
+        padding-top: 351px;
+        background-position: -297px 0;
+        background-size: cover;
+    }
+    .testi-info {
+        flex-basis: 100%;
+        margin-right:0;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .about-testi-area .section-info h3::before {
+        left: 8%;
+    }
+    .testi-info p {
+        padding-bottom: 70px;
+    }
+
+    /* Services */
+    .services-banner-area .about-banner {
+        max-width: 100%;
+        margin-left: 35px;
+    }
+    .banner-section {
+        padding-top: 263px;
+        background-position: -296px 0;
+    }
+    .banner, .banner-sec {
+        margin-left: -14px;
+        margin-top: -320px;
+        max-width: 100%;
+    }
+    .depart-banner-area .about-banner {
+        max-width: 100%;
+        margin-left: 5px;
+    }
+    .depart-banner-area .about-banner span {
+        padding-left: 94px;
+    }
+    .about-banner h4 {
+        font-size: 40px;
+    }
+    .service-time {
+        width: 100%;
+    }
+    .doctor-banner-area .about-banner {
+        margin-left: -8px;
+        max-width: 100%;
+    }
+    .doctor-banner-area .about-banner span {
+        padding-left: 141px;
+    }
+    .profile {
+        margin: 50px 0 0 0;
+    }
+    .single-profile {
+        flex-basis: 100%;
+    }
+    .single-times {
+        flex-basis: 100%;
+        margin-top: 46px;
+    }
+    .single-doc-banner-area .about-banner {
+        margin-left: 57px;
+        max-width: 100%;
+    }
+    .single-doc-banner-area .about-banner span {
+        padding-left: 45px;
+    }
+    .appoin {
+        margin: 0;
+    }
+    .appoin-img {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .blog-banner-area .about-banner {
+        margin-left: 48px;
+        max-width: 100%;
+    }
+    .blog-banner-area .about-banner span {
+        padding-left: 78px;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .blog-box {
+        flex-basis: 100%;
+    }
+    .single-blog h4 a {
+        font-size: 31px;
+        line-height: 39px;
+    }
+    .blog-search {
+        flex-basis: 100%;
+    }
+    .single-contact {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .contact-form {
+        margin: 50px 0;
+    }
+    .contact-form form input {
+        width: 100%;
+        margin-right:0;
+    }
+    .contact-form form textarea {
+        width: 100%;
+        height: 135px;
+    }
+    .contact-area .btn-bg {
+        width: 60%;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+}

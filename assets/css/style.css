@@ -1,0 +1,1467 @@
+/*    
+    Template Name: Medical -- Novena
+    Author - Sanjida
+    Description: 
+    Version: 1.0
+
+    Index
+    ====
+    01. Reset CSS
+    02. Header-Top Area
+    03. Header Area
+    04. Banner Area
+    05. Features Area
+    06. Section About Area
+    07. Services Area
+    08. Section Appoinment Area
+    09. Testimonial Area
+    10. Section Clients Area
+    11. Footer Area
+    12. About
+    13. About Banner Area
+    14. Section About Page
+    15. About Feature Area
+    16. Achieve Area
+    17. Specialist Area
+    18. About Testimonial Area
+    19. Services
+    20. Services Section Area
+    21. Departments
+    22. Single Department
+    23. Service Time Area
+    24. Doctor Area
+    25. Single Doctor
+    26. Appoinment Area
+    27. Profile Area
+    28. Blog Area
+    29. contact Info
+    30. Contact Area
+    31. Blog Area
+*/
+
+/* 01. Reset CSS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+body{
+    font-family: "Roboto", sans-serif;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* 02. Header-Top Area */
+.header-top-area{
+    background: #223a66;
+}
+.header-top {
+    padding: 13px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.top-left{}
+.top-left a{
+    color: #fff;
+    font-size: 16px;
+}
+.top-left a:last-child{
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+.top-left a i {
+    width: 26px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+.top-right{}
+.top-right a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.top-right span{}
+.top-right span span {
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+/* 03. Header Area */
+.header-area{}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.logo{}
+.logo a{}
+.logo a img{}
+.menu{}
+.menu ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0;
+}
+.menu ul li {
+    padding: 0 10px 10px;
+    position: relative;
+}
+.menu ul li a {
+    font-size: 16px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-left: 30px;
+    display: block;
+}
+.menu ul li a:hover{
+    color: #e12454;
+}
+.menu ul li ul {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    border-top: 7px solid #e12454;
+    z-index: 99;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 2;
+}
+.menu ul li ul li a:hover{
+    color: #e12454;
+}
+.menu ul li ul li { 
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}
+.menu ul li ul li:last-child{
+    border-bottom: none;
+}
+.menu ul li ul li:hover{
+    background-color: rgba(225, 36, 84, 0.05);
+}
+.menu ul li ul li a {
+    font-size: 16px;
+    color: rgb(88, 88, 88);
+    transition: 0.5s;  
+    padding: 0 10px;
+    font-weight: 300;
+    display: block;
+}
+.menu ul li ul li ul:last-child {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    margin-top: -35px;
+    margin-left: 161px;
+    border-bottom: 0;
+    z-index: 99;
+}
+
+/* 04. Banner Area */
+.banner-area{
+    padding-top: 710px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner, .banner-sec {
+    content: "";
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -601px;
+    max-width: 585px;
+}
+.banner-info,.banner-sec-info{}
+.banner-info span,.banner-sec-info p{
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 58px;
+    color: #6F8BA4;
+    letter-spacing: 2px;
+    position: relative;
+}
+.banner-info span:before,.banner-sec-info p::before {
+    content: "";
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 0;
+    height: 3px;
+    width: 40px;
+    border: 1px solid transparent;
+    background: red;
+}
+.banner-info h1 {
+    font-size: 55px;
+    text-transform: capitalize;
+    color: #223a66;
+    letter-spacing: 2.5px;
+    padding-bottom: 25px;
+}
+.banner-info p{
+    color: #6F8BA4;
+    font-size: 16px;
+    line-height: 26px;
+}
+.btn-bg {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background-color: #e12454;
+    padding: 14px 17px;
+    border-radius: 50px;
+    transition: .7s;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-top: 25px;
+}
+.btn-bg:hover{
+    background-color: #223a66;
+}
+.banner-info a{}
+.banner-info a i {
+    margin-left: 18px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 05. Features Area */
+.features-area{}
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.single-feature {
+    flex-basis: 32%;
+    border: 1px solid transparent;
+    padding: 27px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px rgb(0 42 106 / 10%);
+    margin: -144px 0 0 0;
+}
+.single-feature i {
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #223a66;
+    margin-bottom: 25px;
+}
+.single-feature span {
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: rgb(22, 22, 22);
+}
+.single-feature h4 {
+    padding-top: 7px;
+    font-size: 27px;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+    color: #223a66;
+}
+.single-feature p {
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(22, 22, 22);
+}
+.single-feature a{}
+.features-area a.btn-bg, .section-appoinment a.btn-bg,.blog-area a.btn-bg {
+    background-color: #223a66;
+}
+.features-area a.btn-bg:hover, .section-appoinment a.btn-bg:hover,.blog-area a.btn-bg:hover{
+    background-color: #e12454;
+}
+.single-feature ul{}
+.single-feature ul li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgb(200, 200, 200);
+}
+.single-feature ul li span {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* 06. Section About Area */
+.section-about-area{}
+.section-about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-left {
+    flex-basis: 355px;
+}
+.about-left img {
+    width: 100%;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+.about-middle {
+    flex-basis: 361px;
+    margin-right: 25px;
+}
+.about-middle img{
+    width: 100%; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+.about-right {
+    flex-basis: 365px;
+}
+.about-right h4 {
+    font-size: 42px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: #223a66;
+}
+.about-right p {
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 24px;
+}
+.about-right a i {
+    padding-left: 16px;
+}
+.section-about-area a.btn-bg {
+    padding: 11px 20px;
+    font-size: 15px;
+}
+
+/* 07. Services Area */
+.services-area {
+    background-color: #f4f9fc;
+}
+.section-info {
+    width: 640px;
+    margin: 0 280px;
+}
+.section-info h3 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #223a66;
+    padding-bottom: 30px;
+    position: relative;
+}
+.section-info h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3px;
+    border: 1px solid transparent;
+    width: 50px;
+    background-color: #e12454;
+}   
+.section-info p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6F8BA4;
+    padding-top: 40px;
+}
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 63px 0;
+}
+.single-service {
+    flex-basis: 336px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 5px;
+    margin: 18px 0 0;
+    padding: 21px;
+}
+.service-icon {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 19px;
+    margin-top: 20px;
+}
+.service-icon i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 45px;
+    text-align: center;
+    color: #e12454;
+}
+.service-icon h5 {
+    font-size: 20px;
+    padding-left: 15px;
+    text-transform: capitalize;
+}
+.single-service p {
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+/* 08. Section Appoinment Area */
+.section-appoinment{}
+.appoinment {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.appoinment-img {
+    flex-basis: 515px;
+    position: relative;
+}
+.appoinment-img img{
+    width: 100%;
+}
+.img-info {
+    width: 100%;
+    padding: 54px 10px;
+    background-color: #223a66;
+    position: absolute;
+    content: "";
+    margin-top: -207px;
+    margin-left: 71px;
+    border-radius: 4px;
+    padding-left: 41px;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.img-info i {
+    font-size: 24px;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.img-info span {
+    font-size: 55px;
+    padding-left: 10px;
+    color: white;
+    font-weight: 700;
+}
+.appoinment-content {
+    flex-basis: 540px;
+}
+.booked{}
+.selection, .date, .address{
+    margin-bottom: 20px;
+}
+.selection select, .date input, .address input, .booked textarea {
+    width: 49%;
+    padding: 16px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(92, 92, 92);
+    background-color: #f4f9fc;
+}
+.selection select option {
+    width: 30%;
+}
+.date {
+    margin-top: 20px;
+}
+.date input{}
+.address{}
+.address input{}
+.booked textarea {
+    width: 99%;
+    height: 20vh;
+}
+
+/* 09. Testimonial Area */
+.testimonial-area{
+    background-color: #f4f9fc;
+}
+.testimonial {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.single-testi {
+    flex-basis: 579px;
+    margin-top: 60px;
+}
+.single-testi fieldset {
+    padding: 16px 0 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: white;
+}
+.single-testi fieldset legend{}
+.single-testi fieldset legend i {
+    width: 70px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 47px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: rgb(249 142 160);
+}
+.testi-img {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 15px;
+}
+.test {
+    flex-basis: 74px;
+    margin-left: 15px;
+}
+.test img {
+    width: 100%;
+    border: 5px solid rgb(244, 242, 242);
+    border-radius: 50%;
+}
+.testi-img h3 {
+    font-size: 22px;
+    padding-left: 14px;
+    text-transform: capitalize;
+    padding-top: 7px;
+}
+.testi-img span {
+    display: block;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #6F8BA4;
+}
+.single-testi fieldset p {
+    padding-left: 22px;
+    padding-bottom: 52px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6F8BA4;
+}
+
+/* 10. Section Clients Area */
+.section-clients{}
+.partners {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 40px 95px 0;
+}
+.single-partner {
+    flex-basis: 185px;
+    margin-top: 33px;
+}
+.single-partner img {
+    max-width: 100%;
+}
+
+/* 11. Footer Area */
+.footer-area{
+    padding: 100px 0 20px;
+    background-color: #f4f9fc;
+}
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #6F8BA4;
+    padding-bottom: 51px;
+}
+.single-footer {
+    flex-basis: 285px;
+}
+.single-footer:first-child {
+    flex-basis: 320px;
+}
+.single-footer:nth-child(2) {
+    margin-left: 67px;
+    flex-basis: 151px;
+}
+.single-footer:nth-child(3) {
+    flex-basis: 151px;
+}
+.single-footer a{}
+.single-footer a img{}
+.single-footer p {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 20px 0;
+    color: #6F8BA4;
+}
+.social-link {
+    margin-top: 16px;
+}
+.social-link a{
+    padding-right: 20px;
+}
+.social-link a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid transparent;
+    background: #6F8BA4;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    transition: .7s;
+}
+.social-link a i:hover{
+    background-color: #e12454;
+}
+.single-footer h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    position: relative;
+}
+.single-footer h4::before{
+    content:"";
+    position: absolute;
+    width: 30%;
+    border: 1px solid #e12454;
+    height: 2px;
+    bottom: 0;
+    background-color: #e12454;
+}
+.single-footer ul {
+    margin-top: 13px;
+}
+.single-footer ul li {
+    padding-top: 13px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.single-footer ul li a{
+    color: #6F8BA4;
+    transition: .7s;
+}
+.single-footer ul li a:hover{
+    color: #223a66;
+}
+.email,.number {
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+.email i, .number i {
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #6F8BA4;
+}
+.email h3, .number h3 {
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 200;
+}
+.email span, .number span {
+    font-size: 20px;
+    display: block;
+    line-height: 32px;
+    color: black;
+    font-weight: 700;
+    transition: .7s;
+}
+.email span:hover, .number span:hover{
+    color: #e12454;
+}
+.number{}
+.number i{}
+.number h3{}
+.number span{}
+.copyright {
+    padding-top: 40px;
+}
+.copyright p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: capitalize;
+    color: #6F8BA4;
+}
+.copyright span{
+    color: black;
+    transition: .7s;
+    font-weight: 700;
+}
+.copyright span:hover{
+    color: #e12454;
+}
+
+/* 12. About */
+
+/* 13. About Banner Area */
+.about-banner-area, .services-banner-area,.depart-banner-area,.doctor-banner-area,.single-doc-banner-area,.blog-banner-area {
+    padding-top: 370px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.about-banner-area::before, .services-banner-area::before,.depart-banner-area::before, .doctor-banner-area::before,.single-doc-banner-area::before,.blog-banner-area::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #223a66;
+    opacity: .85;
+}
+.services-banner-area .about-banner {
+    margin-left: 451px;
+}
+.about-banner {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    margin-top: -230px;
+    margin-left: 482px;
+}
+.about-banner span {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    padding-left: 67px;
+}
+.about-banner h4{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: white;
+    padding-top: 10px;
+}
+
+/* 14. Section About Page */
+.section-about-page{}
+.about-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.section-about-page .section-info {
+    flex-basis: 365px;
+    margin: 0;
+}
+.section-info h4{
+    text-align: left;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #223a66;
+}
+.title {
+    flex-basis: 750px;
+}
+.title p {
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+.title img {
+    width: 30%;
+    padding-top: 10px;
+}
+
+/* 15. About Feature Area */
+.about-feature-area{
+    padding: 50px 0;
+}
+.about-feature {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.single-feat {
+    flex-basis: 275px;
+}
+.single-feat img{
+    width: 100%;
+}
+.single-feat h4 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.single-feat p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #6F8BA4;
+}
+
+/* 16. Achieve Area */
+.achieve-area{}
+.achieve {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+.achieve-area .section-info {
+    flex-basis: 342px;
+    margin: 0;
+}
+.achieve-area .section-info h3 {
+    text-align: left;
+}
+.achieve-area .section-info h3::before {
+    left: 8%;
+}
+.achieve-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 735px;
+    text-align: center;
+}
+.single-achieve {
+    flex-basis: 229px;
+    margin: 8px 0;
+    border: 1px solid transparent;
+    background-color: #eff0f3;
+}
+.single-achieve img {
+    max-width: 100%;
+}
+
+/* 17. Specialist Area */
+.specialist-area{}
+.specialist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 30px 0 0;
+}
+.single-specialist {
+    flex-basis: 270px;
+    margin-top: 47px;
+}
+.img{}
+.img img {
+    width: 100%;
+    margin-bottom: 13px;
+}
+.single-specialist a,.single-profile h3 {
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: .7s;
+}
+.single-specialist a:hover{
+    color: #e12454;
+}
+.single-specialist h4,.single-profile h4{
+    padding-top: 15px;
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+/* 18. About Testimonial Area */
+.about-testi-area {
+    padding-top: 40px;
+}
+.about-testi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+.test-img {
+    flex-basis: 740px;
+    padding-top: 625px;
+    background-position: center;
+    background-size: inherit;
+}
+.testi-info {
+    flex-basis: 638px;
+    margin-right: 60px;
+}
+.about-testi-area .section-info {
+    margin: 0;
+}
+.about-testi-area .section-info h3{
+    text-align: left;
+}
+.about-testi-area .section-info h3::before{
+    left: 5%;
+}
+.testi-info h4 {
+    font-size: 22px;
+    padding-top: 67px;
+}
+.testi-info span {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #6F8BA4;
+}
+.testi-info p {
+    padding-top: 28px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6F8BA4;
+}
+
+/* 19. Services */
+.banner-section {
+    padding-top: 456px;
+    background-size: cover;
+    background-position: inherit;
+    position: relative;
+}
+.banner-sec {
+    margin-top: -340px;
+    margin-left: 27px;
+}
+.banner-sec-info{
+    margin-top: 15px;
+}
+.banner-sec-info p {
+    font-size: 48px;
+    color: black;
+    font-weight: 700;
+    line-height: 52px;
+    text-transform: inherit;
+}
+.banner-sec-info span{
+    color: #223a66;
+}
+.banner-sec-info p::before {
+    margin-top: -27px;
+}
+
+/* 20. Services Section Area */
+.services-banner-area .about-banner span {
+    padding-left: 80px;
+}
+.services-section-area{}
+.services-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.single-serv {
+    flex-basis: 366px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 10px;
+    margin: 43px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(0 42 106 / 10%);
+}
+.serv-img {
+    margin-top: -65px;
+    border: 5px solid #fff;
+}
+.serv-img img {
+    width: 100%;
+}
+.single-serv h4 {
+    font-size: 23px;
+    text-transform: capitalize;
+    padding-bottom: 17px;
+    color: #223a66;
+    padding-top: 19px;
+}
+.single-serv p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #6F8BA4;
+    text-transform: capitalize;
+
+}
+
+/* 21. Departments */
+.depart-banner-area{}
+.depart-banner-area .about-banner {
+    margin-left: 392px;
+}
+.depart-banner-area .about-banner span {
+    padding-left: 145px;
+}
+.services-section-area .section-info p {
+    padding-bottom: 55px;
+    
+}
+.services-section-area .single-serv p{
+    padding-bottom: 18px;
+}
+.single-serv a {
+    text-transform: capitalize;
+    color: black;
+    font-size: 16px;
+    transition: .7s;
+}
+.single-serv a:hover{
+    color: #e12454;
+}
+
+/* 22. Single Department */
+
+/* 23. Service Time Area */
+.service-time-area{}
+.service-time{
+    width: 1170px;
+}
+.service-time img{
+    width: 100%;
+}
+.service-info,.profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0 0;
+}
+.single-time {
+    flex-basis: 700px;
+}
+.title{}
+.title h4 {
+    font-size: 39px;
+    text-transform: capitalize;
+    padding-bottom: 24px;
+    position: relative;
+}
+.title h4::after, .serv-title h4:after,.time-schedule h4::after,.search h4::after, .popular h4::after,.categories h4::after,.tags h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid transparent;
+    background-color: #e12454;
+    width: 50px;
+    height: 3px;
+}
+.title p {
+    padding-top: 28px;
+    font-size: 19px;
+    line-height: 28px;
+    color: #6F8BA4;
+}
+.title span {
+    display: block;
+    padding-top: 26px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.serv-title{}
+.serv-title h4 {
+    padding: 30px 0 24px;
+    font-size: 24px;
+    position: relative;
+    text-transform: capitalize;
+}
+.serv-title ul {
+    margin-top: 28px;
+}
+.serv-title ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #6F8BA4;
+}
+.serv-title ul li i {
+    color: #e12454;
+    width: 40px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 15px;
+}
+.time-schedule {
+    flex-basis: 350px;
+    border: 1px solid transparent;
+    background-color:#f4f9fc;
+    padding: 28px 21px;
+    border-radius: 10px;
+}
+.time-schedule h4,.search h4, .popular h4,.categories h4,.tags h4 {
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 19px;
+    text-transform: capitalize;
+}
+.time-schedule ul {
+    margin: 20px 0;
+}
+.time-schedule ul li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgb(209, 208, 208);
+    padding: 16px 0;
+}
+.time-schedule span{
+    color: #6F8BA4;
+}
+.time-schedule span span{
+    color: #6F8BA4;
+}
+.time-schedule h3 {
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #6F8BA4;
+    font-weight: 200;
+    padding-top: 15px;
+}
+.time-schedule h5 {
+    display: block;
+    font-size: 30px;
+    color: black;
+    padding-top: 8px;
+}
+
+/* 24. Doctor Area */
+.doctor-banner-area{}
+.doctor-banner-area .about-banner {
+    margin-left: 365px;
+}
+.doctor-banner-area .about-banner span {
+    padding-left: 174px;
+}
+
+/* 25. Single Doctor */
+.single-doc-banner-area .about-banner {
+    margin-left: 427px;
+}
+.single-doc-banner-area .about-banner span {
+    padding-left: 87px;
+}
+
+/* 26. Appoinment Area */
+.appoin {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 51px;
+}
+.appoin-img{
+    flex-basis: 437px;
+}
+.appoin-img img{
+    width: 20%;
+}
+.appoin-img h4 {
+    font-size: 23px;
+    padding-top: 17px;
+    color: black;
+    text-transform: capitalize;
+}
+.appoin-img span {
+    display: block;
+    font-size: 50px;
+    color: #223a66;
+    padding-top: 13px;
+}
+
+/* 27. Profile Area */
+.profile-area{}
+.profile{
+    margin: 50px 0 0 66px;
+}
+.single-profile {
+    flex-basis: 408px;
+}
+.img{}
+.img img{
+    width: 100%;
+}
+.single-profile a{}
+.single-profile h4{}
+.link{
+    margin-top: 15px;
+}
+.link a{}
+.link a i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+    transition: .7s;
+}
+.link a i:hover{
+    color: #e12454;
+}
+.single-times {
+    flex-basis: 665px;
+}
+
+/* 28. Blog Area */
+.blog-banner-area .about-banner {
+    margin-left: 455px;
+}
+
+.blog-banner-area .about-banner span {
+    padding-left: 99px;
+}
+
+/* 29. contact Info */
+.contact-info-area{}
+.contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.single-contact {
+    flex-basis: 340px;
+    text-align: center;
+    border: 6px solid #EEF2F6;
+    padding: 43px 47px;
+}
+.single-contact i {
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #223a66;
+    font-size: 25px;
+}
+.single-contact h4{
+    font-size: 21px;
+    padding: 20px 0;
+	text-transform:capitalize;
+	
+}
+.single-contact span{
+    display: block;
+    padding-top: 18px;
+    font-size: 17px;
+}
+
+/* 30. Contact Area */
+.contact-area{
+    padding-bottom: 100px;
+}
+.contact-area .section-info h3 {
+    font-size: 40px;
+}
+.contact-form {
+    margin: 50px;
+}
+.contact-form form{}
+.contact-form form input {
+    width: 48%;
+    margin-bottom: 21px;
+    height: 54px;
+    margin-right: 7px;
+    padding-left: 12px;
+    font-size: 16px;
+    background-color: #f4f9fc;
+    border-color: transparent;
+}
+.contact-form form textarea {
+    width: 97%;
+    height: 170px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: #f4f9fc;
+    border-color: transparent;
+}
+.contact-area .btn-bg{
+    width: 18%;
+    border: 1px solid transparent;
+    background-color: #e12454;
+    transition: .7s;
+}
+.contact-area .btn-bg:hover{
+    background-color: #223a66;
+}
+
+/* 31. Blog Area */
+.blog-area{}
+.blog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+.blog-box {
+    flex-basis: 765px;
+}
+.single-blog {
+    margin-bottom: 43px;
+}
+.single-blog img{
+    width: 100%;
+}
+.comments {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 17px 0;
+}
+.single-comment{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-right: 25px;
+}
+.single-comment a {}
+.single-comment a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #6F8BA4;
+}
+.single-comment h5 {
+    font-size: 17px;
+    font-weight: 200;
+    text-transform: capitalize;
+    color: #6F8BA4;
+}
+.single-blog h4{}
+.single-blog h4 a {
+    font-size: 38px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .7s;
+    color: #223a66;
+}
+.single-blog h4 a:hover{
+    color: #e12454;
+}
+.single-blog p {
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #6F8BA4;
+}
+.blog-search {
+    flex-basis: 340px;
+}
+.search{}
+.search h4{}
+.search input {
+    margin: 25px 0;
+    width: 100%;
+    height: 45px;
+    font-size: 19px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.popular{}
+.popular h4 {
+    margin: 70px 0 15px;
+}
+.popular a {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 200;
+    color: #6F8BA4;
+    text-transform: capitalize;
+}
+.popular a span{
+    display: block;
+    font-size: 18px;
+    color: #223a66;
+    font-weight: 700;
+}
+.categories{}
+.categories h4 {
+    margin: 70px 0 12px;
+}
+.cat-link{}
+.cat-link ul{
+    transition: .7s;
+}
+.cat-link ul li {
+    padding: 11px 0;
+}
+.cat-link ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #223a66;
+}
+.cat-link ul li a span {
+    font-size: 16px;
+    padding-left: 15px;
+    color: #6F8BA4;
+    font-weight: 200;
+}
+.cat-link ul :hover{
+    transform: translateX(10px);
+}
+.tags{}
+.tags h4 {
+    margin: 58px 0 26px;
+}
+.tags-link {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 145px 0 0;
+}
+.tags-link a {
+    padding: 9px 10px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #cfd2d5;
+    color: rgb(49, 49, 49);
+    margin: 4px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.blog-area .time-schedule {
+    margin-top: 70px;
+}
